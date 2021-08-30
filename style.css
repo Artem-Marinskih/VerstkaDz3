@@ -1,0 +1,566 @@
+@font-face {
+    font-family: StratosSkyeng;
+    src: url(./assets/fonts/stratosskyengweb-regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+  }
+@font-face {
+    font-family: StratosSkyeng;
+    src: url(./assets/fonts/stratosskyengweb-bold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: StratosSkyeng, Helvetica, sans-serif;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.header {
+    min-width: 850px;
+    padding: 20px 140px 0 140px;
+    background: #271A58;
+}
+.header-logo {
+    width: 134px;
+    height: 20px;
+    background-image: url(./images/Logo.svg);
+}
+.header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-kurs {
+    padding: 8px 16px;
+    margin-right: 20px;
+    background: #AD61FF;
+    border-radius: 32px;
+
+    font-size: 20px;
+    line-height: 135%;
+    border: none;
+    color: #FFFFFF;
+}
+.header-kurs:hover {
+    background-color: #FF8071;
+}
+.header-text {
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 135%;
+
+    color: #FFFFFF;
+}
+.header-button {
+    width: 77px;
+    height: 36px;
+    background: #F9F9F9;
+    border-radius: 6px;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: #868D92;
+}
+.profession {
+    padding: 0 140px 41px 140px;
+    background: #271A58;
+}
+.profession-text{
+    padding-top: 40px;
+    font-size: 20px;
+    line-height: 115%;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.profession-new {
+    min-width: 850px;
+}
+.profession-title {
+    flex-grow: 1;
+    width: 927px;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 92%;
+    color: #F4F4FF;
+}
+.profession-slogan {
+    width: 166px;
+    height: 36px;
+    margin-left: 90px;
+    font-size: 20px;
+    line-height: 90%;
+
+    text-align: center;
+    color: #FF8071;
+
+    transform: rotate(15.96deg);
+}
+.profession-blocks {
+    min-width: 850px;
+}
+.scroll {
+    overflow: auto;
+}
+.profession-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 360px;
+    min-width: 360px;
+    margin: 60px 40px 70px 0;
+    padding: 30px;
+        
+    background: #FFFFFF;
+    box-shadow: 10px -10px 16px rgba(0, 0, 0, 0.1), -10px 10px 15.9988px rgba(0, 0, 0, 0.1);
+    border-radius: 29.9978px;
+}
+.profession-container-text-up {
+    font-size: 20px;
+    line-height: 115%;
+
+    color: #000000;
+}
+.profession-container-text-up span {
+    font-size: 20px;
+    line-height: 115%;
+
+    color: #868D92;
+}
+.profession-container-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 110%;
+
+    color: #000000;
+}
+.circle {
+    align-self: flex-end;
+    float: right;
+    padding: 30px 0;
+}
+.column {
+    height: 274px;
+    align-self: flex-end;
+    float: right;
+    padding: 30px 0;
+}
+.gates {
+    align-self: flex-end;
+    float: right;
+    padding: 20px 0;  
+}
+.profession-container-text-dn {
+    font-size: 20px;
+    line-height: 115%;
+    background: #FFFFFF;
+    border-radius: 80px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid ;
+}
+.orange {
+    color: #FF8071;
+}
+.lilac {
+    color: #AD61FF;
+}
+.blue {
+    color: #565EEF;
+}
+.button-orange {
+    padding: 15px 20px;
+    background: #FF8071;
+    border-radius: 30px;
+    border: none;
+    font-size: 28px;
+    line-height: 90%;
+
+    color: #FFFFFF;
+}
+.button-orange:hover {
+    background: #AD61FF;
+}
+.invest {
+    min-width: 850px;
+    background: #AD61FF;
+    padding: 59px 140px;
+    border-radius: 0px 0px 32px 32px;
+}
+.invest-paragraf-education {
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 115%;
+    color: #FFFFFF;
+}
+.invest-paragraf-education span {
+    font-size: 40px;
+    line-height: 115%;
+    color: #000;
+}
+.invest-paragraf-text, .kontakt-text {
+    max-width: 700px;
+    margin-bottom: 46px;
+    font-size: 26px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+.invest-paragraf-no-credit {
+    width: 135px;
+    font-size: 40px;
+    line-height: 39px;
+    text-align: center;
+    color: #FFFFFF;
+    transform: rotate(-22.62deg);
+}
+.invest-text-dn {
+    width: 260px;
+    height: 60px;
+    font-size: 28px;
+    line-height: 90%;
+   
+    color: #FFFFFF;
+}
+.block {
+    padding: 96px 140px 0 140px;
+    background: #fff;
+}
+.block-title {
+    width: 850px;
+    min-width: 750px;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 90%;
+
+    color: #271A58;
+}
+.block-ticket {
+    min-width: 850px;
+    margin: 40px 0;
+    padding: 40px;
+    background: #D8D7FF;
+    border-radius: 30px;
+}
+.ticket-wraper {
+    position: relative;
+}
+.ticket-info {
+    float: left;
+    width: 240px;
+}
+.ticket-wraper::after, .ticket-wraper::before {
+    position: absolute;
+    left: 220px;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+}
+.ticket-wraper::before {
+    top: -62px;
+}
+.ticket-wraper::after {
+    bottom: -70px;
+}
+.ticket-date {
+    font-size: 48px;
+    line-height: 135%;
+}
+.ticket-date span {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 20px;
+    line-height: 120%;
+}
+.ticket-profession {
+    position: absolute;
+    bottom: 0;
+    width: 138px;
+    font-size: 20px;
+    line-height: 115%;
+    padding-top: 1%;
+
+    color: #565EEF;
+}
+.ticket-details {
+    margin-left: 240px;
+}
+.ticket-title, .pumping-card-title, .kontact-title {
+    max-width: 565px;
+    margin-bottom: 29px;
+
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 110%;
+}
+.ticket-time, .ticket-speakers {
+    font-size: 20px;
+    line-height: 135%;
+}
+.ticket-speakers {
+    margin: 8px 0;
+    width: 50%;
+}
+.ticket-button {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+    height: 60px;
+    padding: 18px 50px;
+    font-size: 28px;
+    line-height: 25px;
+    color: #565EEF;
+
+    border-radius: 30px;
+    border: none;
+    background-color: #fff;
+}
+.ticket-button:hover {
+    color: #fff;
+    background-color: #FF8071;
+}
+.block-ticket-double {
+    background-color: #565EEF;
+
+    min-width: 850px;
+    margin: 40px 0;
+    padding: 40px;
+    border-radius: 30px;
+    color: #fff;
+}
+.ticket-double-wraper {
+    background-image: url(./images/ellipse.svg);
+    background-repeat:no-repeat;
+    background-position: right top;
+    position: relative;
+}
+.ticket-double-title {
+    padding: 48px 0;
+}
+.telegram {
+    justify-content: start;
+    min-width: 850px;
+}
+.button-telegram {
+    width: 47px;
+    height: 47px;
+    margin: 0 12px 0 31px;
+    background-color: #271A58;
+    border: none;
+    background-image: url(./images/telegram.svg);
+    background-repeat:no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+}
+.telegram-text {
+    font-size: 28px;
+    line-height: 90%;
+    color: #271A58;
+}
+.block-raising {
+    width: 111px;
+    font-size: 20px;
+    line-height: 90%;
+    color: #ABD52E;
+    transform: rotate(-13.44deg);
+}
+.block-card {
+    flex-wrap: wrap;
+}
+.card-container {
+    min-width: 600px;
+    max-height: 360px;
+    margin: 46px 40px 40px 0;
+    padding: 30px;
+    background: #F5F5F5;
+    border-radius: 30px;
+}
+.card-wraper {
+    position: relative;
+}
+.position {
+    position: absolute;
+    bottom: 30px;
+}
+.dome, .column2, .petals {
+    margin-left: 43px;
+}
+.foto {
+    padding: 60px 140px 96px 140px;
+    margin-top: 96px;
+    background: #E6E6F6;
+}
+.grid-container {
+    display: grid; 
+    grid-template-areas: "text1 foto1"
+                         "foto2 foto1"
+                         "foto2 text2"
+                         "text3 foto3"
+                         "foto4 foto3"
+                         "foto4 text4"
+                         "text5 foto5";
+    grid-template-rows: repeat(8, auto);
+    grid-template-columns: 560px 560px;
+    justify-content: space-around;
+    grid-gap: 40px;
+  }
+.cell1 {
+    grid-area: text1;
+}
+.cell2 {
+    grid-area: foto1;
+}
+.cell3 {
+    grid-area: text2;
+}
+.cell4 {
+    grid-area: foto2;
+}
+.cell5 {
+    grid-area: text3;
+}
+.cell6 {
+    grid-area: foto3;
+}
+.cell7 {
+    grid-area: text4;
+}
+.cell8 {
+    grid-area: foto4;
+    margin-left: -100px;
+}
+.cell9 {
+    grid-area: text5;
+}
+.cell10 {
+    margin-left: -38px;
+    grid-area: foto5;
+}
+.foto-title {
+    grid-area: text1;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 110%;
+
+    color: #AD61FF;
+}
+.foto-text {
+    font-size: 40px;
+    line-height: 110%;
+    padding-bottom: 60px;
+    color: #000;
+}
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 90%;
+   
+    letter-spacing: -0.734979px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #F4F4FF;
+}
+.feedback {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background: #271A58;
+}
+.feedback_card {
+    width: 360px;
+    height: 400px;
+    min-width: 360px;
+    padding: 30px 40px 30px 30px;
+    margin: 0 20px;
+    background: #35256E;
+    border-radius: 30px;    
+}
+.feedback_card_text {
+    font-size: 20px;
+    line-height: 115%;
+    color: rgba(224, 223, 255, 0.8);
+}
+.feedback_card_foto {
+    display: inline-block;
+    vertical-align: middle;
+     margin-top: 40px;
+    border-radius: 16px;
+}
+.feedback_card_name {
+    width: 140px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 110%;
+ 
+    color: #fff;
+}
+.pumping-card {
+    max-width: 360px;
+    margin-right: 40px;
+    padding: 30px;
+    border-radius: 30px 30px 0 0;
+}
+.orange-back {
+    background: #FF9E00;
+}
+.lilac-back {
+    background: #AD61FF;
+}
+.blue-back {
+    background: #565EEF;
+}
+.pumping-card-title {
+    width: 270px;
+    color: #fff;
+}
+.pumping-card-button {
+    background: #FFFFFF;
+    border-radius: 80px;
+    border-style: none;
+    padding: 10px;
+    font-size: 20px;
+    color: #271A58;
+}
+.kontact {
+    background: #271A58;
+    border-radius: 30px;
+    margin: 0 80px;
+    padding: 32px 40px 40px;
+}
+.kontact-title {
+    color: #fff;
+}
+.input, .kontakt-button{
+    width: 264px;
+    height: 48px;
+    padding: 0 12px;
+    margin: 12px 0;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border-style: none;
+    font-size: 18px;
+    line-height: 145%;
+}
+.kontakt-button {
+    background: #D8F484;
+}
+.kontakt-text-end {
+    font-size: 14px;
+    line-height: 145%;
+    color: #FFF;
+}
